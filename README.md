@@ -1,5 +1,9 @@
 # NeighbourCheck
 NOTE: STILL WIP
+
+____________________________________________________________________
+
+
 Using arrays to check neighbour elements and count this.
 
 
