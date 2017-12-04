@@ -18,4 +18,4 @@ Essentially, the code will allow the checking of neighbour elements via user inp
 
 ...
 
-n rows should be x neighbours, (OR x-1+ 8n)
+n rows should be x neighbours, (OR x from previous row + 8n)
