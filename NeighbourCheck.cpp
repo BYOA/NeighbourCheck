@@ -1,7 +1,7 @@
 //ver 1.0
 //Author: BYOA
 
-#include<iostream>
+#include<iostream> //accounts for character output and character input.
 
 
 using namespace std;
@@ -56,7 +56,7 @@ int Calculation (bool grid[][LARGENUM], int gridmin, int CenterValue)
     {
         for (int y = 0; y < gridmin ; y++)
         {
-            if (grid[x][y]== false)
+            if (grid[x][y] == false)
             {
                 ++NeighbourCount;
             }
