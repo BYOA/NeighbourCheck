@@ -35,7 +35,7 @@ int main ()
     cout << "Please enter the number of rows that you wish to count as neighbours.\n";
     cin >> RowInput;
 
-    int gridmin = (RowInput*2) + 1;
+    int gridmin = (RowInput*2) + 1; // + 1 is needed to account for the centre element. rowinput * 2 accounts for up and down sides of center element.
 
     bool grid [gridmin][LARGENUM] = {}; //initalizes to 0 which is false in boolean terminology.
 
