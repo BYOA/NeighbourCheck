@@ -6,7 +6,7 @@
 
 using namespace std;
 
-const int LARGENUM =10000; //will be changed later for dyamic array (maybe vectors too)
+const int LARGENUM =10000; //BAD DESIGN. Will be changed later for dynamic array or vectors.
 void DisplayGrid (bool grid[][LARGENUM], int gridmin);
 int Calculation (bool grid[][LARGENUM], int gridmin, int CenterValue);
 
@@ -29,17 +29,12 @@ int main ()
     cout << "Please enter the number of rows that you wish to count as neighbours.\n";
     cin >> RowInput;
 
-     int gridmin = (RowInput*2) + 1;
+    int gridmin = (RowInput*2) + 1;
 
-    bool grid [gridmin][LARGENUM] = {}; //initalizes to 0 which is false.
-
-    //displaying grid
-
+    bool grid [gridmin][LARGENUM] = {}; //initalizes to 0 which is false in boolean terminology.
 
     answer = Calculation (grid, gridmin, RowInput);
-
-
-
+    //displaying grid
     system("CLS");
     DisplayGrid(grid, gridmin);
 
@@ -57,9 +52,7 @@ int Calculation (bool grid[][LARGENUM], int gridmin, int CenterValue)
         for (int y = 0; y < gridmin ; y++)
         {
             if (grid[x][y] == false)
-            {
                 ++NeighbourCount;
-            }
         }
     }
     return NeighbourCount;
@@ -73,13 +66,9 @@ void DisplayGrid (bool grid[][LARGENUM], int gridmin)
         for (int y = 0; y < gridmin ; y++)
         {
             if (grid[x][y]== true)
-            {
                 cout << " O ";
-            }
             else
-            {
                 cout <<" . ";
-            }
         }
         cout << '\n';
     }
