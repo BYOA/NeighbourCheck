@@ -1,6 +1,12 @@
 //ver 1.0
 //Author: BYOA
 
+/* What to be done with program 
+
+1. Change fixed array to dynamic array allocation. Large neightbour counts will result in errors so this must be fixed ASAP.
+
+
+*/ 
 #include<iostream> //accounts for character output and character input.
 
 
