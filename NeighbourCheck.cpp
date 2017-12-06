@@ -51,7 +51,7 @@ int Calculation (bool grid[][LARGENUM], int gridmin, int CenterValue)
 {
     int NeighbourCount = 0;
 
-    grid [CenterValue][CenterValue] = true;
+    grid [CenterValue][CenterValue] = true; //Interestingly, rowinput coordinates will result in always being in the centre, no matter the size of the grid.
 
     for (int x = 0; x < gridmin ; x++)
     {
