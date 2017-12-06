@@ -80,12 +80,8 @@ void DisplayGrid (bool grid[][LARGENUM], int gridmin)
             {
                 cout <<" . ";
             }
-
-            if (y == gridmin -1)
-            {
-                cout <<'\n';
-            }
         }
+        cout << '\n';
     }
 
 }
